@@ -1,0 +1,160 @@
+@font-face { font-family: 'Cookies'; src: url('font/Cookies.ttf'); src: url('font/Cookies.ttf?#iefix') format('truetype'); font-weight: normal; font-style: normal; }
+
+*{margin:0px; padding:0px;}
+
+html {margin:0px; padding:0px;}
+
+body {margin:0px; padding:0px; text-align:left; font:normal 12px arial; color:#666; background:url(../images/login_bkg_bg.jpg) repeat-x 0 0;}
+
+p, h1, h2,h3, h4, h5, h6 { margin:0; padding:0;}
+
+.wrapper {}
+
+.header { width:1000px; margin:0 auto;}
+
+.logo{}
+
+.content { width:1000px; margin:0 auto;}
+
+.footer_before {width:1000px; margin:10px auto;}
+
+.footer { background:url(../images/login_bkg_footer_bg.jpg) repeat-x 0 0; height:280px; }
+
+.footer_in { width:1000px; margin:0 auto;}
+
+.inputbox{ background: none repeat scroll 0 0 #FFD792;
+    border: 1px solid #C67C33;
+    box-shadow: 0 0 4px 1px #333333;
+    color: #999999;
+    font-size: 11px;
+    height: 14px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 0 0 3px;
+    width: 60%;}
+.button{ background: none repeat scroll 0 0 #063664;
+    border: 0 none;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 6px; pointer:hand;}
+.button:hover{}
+#wrap{width:450px;margin-top:60px;margin-right:auto;margin-left:auto; margin-bottom:100px; }
+#content-wrap{ background:url(../images/login_bg.jpg) 0 100% no-repeat;}
+#content{  font-size: 11px;
+    height: 98px;
+    padding: 40px 40px 20px 180px;}
+ 
+div.block{margin-bottom:10px}
+#message-box{margin-right:auto;margin-left:auto;padding-top:10px;}
+.msgError{background-image:url(../images/error-bg.png);background-repeat:repeat-x;background-position:top;background-color:#F5D0CD;color:#8D0D0D;border:2px solid #900;-moz-border-radius:5px;border-radius:5px;padding:5px}
+.msgError span{background-image:url(../images/error-ico.png);background-repeat:no-repeat;background-position:5px center;display:inline-block;padding-right:10px;padding-left:30px;font-weight:700}
+.msgError .error li{background-image:url(../images/required.png);background-repeat:no-repeat;background-position:left center;padding-left:15px;margin-left:15px}
+
+#header {
+	padding:0px;
+	margin:0 auto;
+	background:url(../images/header1.jpg) no-repeat;
+	position:relative;
+ 	width:950px;
+ 
+	text-align:center;
+	   }
+	   
+
+#heading {
+    background: url("../images/border.jpg") repeat-x scroll center bottom transparent;
+    color: #1A4359;
+    font-size: 20px;
+    margin: 20px auto 30px;
+    padding-bottom: 10px;
+    text-align: left;
+	width:950px;
+}
+
+#heading h1 {
+    color: #1A4359;
+    font-size: 20px;
+    font-weight: normal;
+	font-family:'Cookies';
+	
+}
+
+.content_in {width:950px; margin:0 auto;}
+.content_in h3 { margin:0; padding:0 0 10px 0; font-size:14px;}
+ 
+
+#content-wrap h1 {background: url("../images/login_title_bg.jpg") no-repeat 0 0; color:#fff; font-size:12px; margin:0px; padding:6px 15px;}
+	   
+
+#logo	{
+	width:1020px;
+	margin:0 auto;
+ 
+	text-align:left;
+	padding-top:87px;
+ 
+	z-index:2;
+	}
+
+	.wrapper_foot	{
+	width:100%;
+	background: url(../images/footer_bg.png);
+	color:#FFFFFF;
+	}
+	
+.footer_top
+ {
+ color: #333333;
+ padding-top:4px;
+ border-top:6px solid #EB9048;
+ }	
+.wrapper_foot_content	{
+	width:980px;
+	padding:0px 0px 0px 0px; 
+	margin:0 auto;
+	}
+
+
+.wrapper_foot_box {
+    background: url("../images/box_devider.jpg") no-repeat scroll right center transparent;
+    color: #222222;
+    float: left;
+    font-size: 11px;
+    padding: 35px 10px 5px;
+    text-align: justify;
+}
+
+
+.wrapper_foot_box h2 {
+    border-bottom: 1px solid #EB9048;
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 13px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 0 5px #000000;
+}
+
+.wrapper_foot_box ul {
+    margin: 5px 0 10px;
+    padding: 0;
+}
+
+
+.wrapper_foot_box ul li {
+    color: #DFDFDF;
+    list-style: none outside none;
+    margin: 0;
+    padding: 4px 0;
+    text-align: left;
+}
+
+
+.wrapper_foot_box a {
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none;
+}

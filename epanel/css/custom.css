@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+#blank_screen {
+    background-color: #333333;
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+}
+
+#content_open_block {
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 10px 10px;
+    left: 25%;
+    min-height: 500px;
+    position: absolute;
+    top: 25%;
+    width: 800px;
+    display: none;
+}
+
+#content_frame {
+    border: 3px solid #CCCCCC;
+    margin: 25px;
+    padding: 20px;
+}
