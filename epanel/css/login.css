@@ -18,7 +18,7 @@ p, h1, h2,h3, h4, h5, h6 { margin:0; padding:0;}
 
 .footer_before {width:1000px; margin:10px auto;}
 
-.footer { background:url(../images/login_bkg_footer_bg.jpg) repeat-x 0 0; height:280px; }
+.footer { background:url(../images/login_bkg_footer_bg.jpg) repeat-x 0 0; height:280px;}
 
 .footer_in { width:1000px; margin:0 auto;}
 
