@@ -75,15 +75,30 @@ div.block{margin-bottom:10px}
 
 #heading h1 {
     color: #1A4359;
-    font-size: 20px;
-    font-weight: normal;
-	font-family:'Cookies';
+    font-size: 22px;
+    font-weight: bolder;
+	font-family: "Comic Sans MS";
 	
 }
 
+
+h3.sub-head {
+    color: #555;
+    font-size:16px;
+    font-weight:bolder;
+	font-family:"Comic Sans MS";
+	
+}
+
+img.t-pic { margin:10px 10px 10px 0; border:0;}
+
+.t-head { color:#fff; font:bold 13px "Comic Sans MS";text-shadow:3px 2px 5px #555; height:30px; background:#eb9049; text-align:center;}
+
 .content_in {width:950px; margin:0 auto;}
 .content_in h3 { margin:0; padding:0 0 10px 0; font-size:14px;}
- 
+.content_in .data-table tbody td{background:#faf0e7; height:40px; text-align:center;}
+.content_in .data-table tbody tr.odd td{background:#fff;}
+.content_in .data-table {border-bottom:1px solid #faf0e7;}
 
 #content-wrap h1 {background: url("../images/login_title_bg.jpg") no-repeat 0 0; color:#fff; font-size:12px; margin:0px; padding:6px 15px;}
 	   
