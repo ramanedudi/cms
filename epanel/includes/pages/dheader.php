@@ -1,5 +1,6 @@
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/cms/epanel/includes/config/lock.php'); ?>
 <?php include ($_SERVER['DOCUMENT_ROOT'].'/cms/epanel/includes/config/constants.php'); ?>
+<?php $googleUrl = str_replace("epanel","admin",baseUrl); ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -51,6 +52,13 @@ function deleteContent(module, id)
 		$("#error").html( "Data updated :  " + msg );
 		$("#option_id_"+id).hide(1500);
 		});
+}
+
+function openGoogleA()
+{
+	$("#blank_screen").fadeIn(2000);
+	$("#content_frame").attr('src','<?php echo $googleUrl; ?>google-analytics.php');
+	$("#content_open_block").show();
 }
 </script>
 </head>

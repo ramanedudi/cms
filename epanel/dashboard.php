@@ -66,8 +66,10 @@
 						border="0" cellpadding="0" cellspacing="0">
 						<tr>
 							<td width="92" height="102">&nbsp;</td>
-							<td width="119"><img src="images/slideshow-icon.jpg" alt=""
-								width="103" height="99">
+							<td width="119">
+							<a href="includes/modules/slider/sliderListing.php">
+								<img src="images/slideshow-icon.jpg" alt="" width="103" height="99" />
+							</a>
 							</td>
 							<td width="141" align="left" valign="top"><h3>Site
 									Slideshow</h3> Modify picture in the slideshow</td>
@@ -154,8 +156,10 @@
 						</tr>
 						<tr>
 							<td>&nbsp;</td>
-							<td><img src="images/google-icon.jpg" alt="" width="103"
-								height="81">
+							<td><a href="#" onclick="openGoogleA()">
+								<img src="images/google-icon.jpg" alt="" width="103" height="81">
+							</a>
+								
 							</td>
 							<td align="left" valign="top"><h3>Google Analytics</h3>
 								Using Google API you can monitor the traffic of the site	
