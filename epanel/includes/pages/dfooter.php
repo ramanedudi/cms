@@ -23,7 +23,7 @@
 </div>
 <div id="blank_screen"></div>
 <div id="content_open_block">
-	<iframe name="content_frame" id="content_frame" src="" width="700px" height="500px"></iframe>
+	<iframe name="content_frame" id="content_frame" src="" width="700px" height="400px"></iframe>
 	<div id="close">CLOSE</div>
 </div>
 </body>

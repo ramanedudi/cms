@@ -19,13 +19,12 @@ $count = mysqli_num_rows($res);
 <div class="content_in">
 	<div>
 		<h3 class="sub-head">
-			<img src="<?php echo baseUrl; ?>images/page-icon.jpg" alt=""
-				width="79" height="60" align="absmiddle" style="margin-right: 10px;">Posts
+			<img src="<?php echo baseUrl; ?>images/page-icon.jpg" alt="" align="absmiddle" style="margin-right: 10px;">Posts
 		</h3>
 	</div>
 
 
-	<div>
+	<div class="t-right">
 		Add Post 
 		<a href="#" onClick="editContent('pages','pages','page-<?php echo $_GET['pid']; ?>')">
 			<img src="<?php echo baseUrl; ?>images/add-icon.png"
@@ -37,10 +36,10 @@ $count = mysqli_num_rows($res);
 		class="data-table">
 		<thead>
 			<tr class="t-head">
-				<th>Delete</th>
-				<th>Active</th>
-				<th>Edit</th>
-				<th>Title</th>
+				<th width="90">Delete</th>
+				<th width="90">Active</th>
+				<th width="90">Edit</th>
+				<th class="t-left">Title</th>
 				<th>Updated By</th>
 			</tr>
 		</thead>
@@ -64,13 +63,14 @@ $count = mysqli_num_rows($res);
 						<img src="<?php echo baseUrl; ?>images/edit-icon.png" alt="" width="20" height="21">
 					</a>		
 				</td>
-				<td><?php echo htmlentities($row['title_en']); ?></td>
+				<td class="t-left"><?php echo htmlentities($row['title_en']); ?></td>
 				<td>Admin</td>
 			</tr>
 			<?php $i++; } ?>
 		<?php endif;?>
 	</tbody>
 	</table>
+	<br/>
 </div>
 
 </div>

@@ -19,14 +19,13 @@ $count = mysqli_num_rows($res);
 <div class="content_in">
 	<div>
 		<h3 class="sub-head">
-			<img src="<?php echo baseUrl; ?>images/book-icon.jpg" alt=""
-				width="79" height="60" align="absmiddle" style="margin-right: 10px;">Articles
+			<img src="<?php echo baseUrl; ?>images/book-icon.jpg" alt="" align="absmiddle" style="margin-right: 10px;">Articles
 				
 		</h3>
 	</div>
 
 
-	<div>
+	<div class="t-right">
 		Add Article 
 		<a href="#" onClick="editContent('articles','article','')">
 			<img src="<?php echo baseUrl; ?>images/add-icon.png"
@@ -40,8 +39,8 @@ $count = mysqli_num_rows($res);
 			<tr class="t-head">
 				<th>Delete</th>
 				<th>Active</th>
-				<th>Edit</th>
-				<th>Title</th>
+				<th width="90">Edit</th>
+				<th class="t-left">Title</th>
 				<th>Update Last On</th>
 				<th>Updated By</th>
 			</tr>
@@ -66,7 +65,7 @@ $count = mysqli_num_rows($res);
 						<img src="<?php echo baseUrl; ?>images/edit-icon.png" alt="" width="20" height="21">
 					</a>		
 				</td>
-				<td><?php echo htmlentities($row['title_en']); ?></td>
+				<td class="t-left"><?php echo htmlentities($row['title_en']); ?></td>
 				<td><?php echo $row['modified']; ?></td>
 				<td>Admin</td>
 			</tr>

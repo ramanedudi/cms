@@ -19,13 +19,13 @@ $count = mysqli_num_rows($res);
 <div class="content_in">
 	<div>
 		<h3 class="sub-head">
-			<img src="<?php echo baseUrl; ?>images/page-icon.jpg" alt="" width="79" height="60" align="absmiddle" style="margin-right: 10px;">
+			<img src="<?php echo baseUrl; ?>images/page-icon.jpg" alt="" align="absmiddle" style="margin-right: 10px;">
 				Pages, links and Documents from the site
 		</h3>
 	</div>
 
 
-	<div>
+	<div class="t-right">
 		Add News <img src="<?php echo baseUrl; ?>images/add-icon.png"
 			alt="" width="20" height="20" align="absmiddle"
 			style="margin-left: 5px;">
@@ -35,8 +35,8 @@ $count = mysqli_num_rows($res);
 		<thead>
 			<tr class="t-head">
 				<th>Active</th>
-				<th>Edit</th>
-				<th>Title</th>
+				<th width="90">Edit</th>
+				<th class="t-left">Title</th>
 				<th>Update Last On</th>
 				<th>Updated By</th>
 			</tr>
@@ -55,7 +55,7 @@ $count = mysqli_num_rows($res);
 						<img src="<?php echo baseUrl; ?>images/edit-icon.png" alt="" width="20" height="21">
 					</a>		
 				</td>
-				<td><?php echo htmlentities($row['title_en']); ?></td>
+				<td class="t-left"><?php echo htmlentities($row['title_en']); ?></td>
 				<td><?php echo $row['created']; ?></td>
 				<td>Admin</td>
 			</tr>

@@ -34,6 +34,8 @@ $cRes = mysqli_query($con,$sqlCat);
 ?>
 <script src="<?php echo baseUrl; ?>includes/modules/ckeditor/ckeditor.js"></script>
 <link rel="stylesheet" href="<?php echo baseUrl; ?>includes/modules/ckeditor/sample.css">
+<link href="../../css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="<?php echo baseUrl; ?>/css/custom.css">
 <div id="msg">
 <?php if(isset($error) && !empty($error)) {
 	echo $error;
@@ -42,21 +44,19 @@ $cRes = mysqli_query($con,$sqlCat);
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img src="" width="" height="" />
-		<div class="header-detail">Homepage News</div>
-		<div class="last-updated">Last Updated : <?php if(isset($row['modified'])) echo $row['modified']; ?></div>
+		<img src="<?php echo baseUrl; ?>images/book-icon.jpg" width="" height="" />
+		<div class="header-detail">Homepage Articles</div>
+		<div class="last-updated">Last Updated : <strong><?php if(isset($row['modified'])) echo $row['modified']; ?></strong></div>
 	</div>
 	<div class="text-content">
 		<form method="post">
-			<input type="hidden" name="id" value="<?php if(isset($row['id'])) echo $row['id']; ?>" />
-			<label>Title : </label>
-				<input type="text" name="title_en" value="<?php if(isset($row['title_en'])) echo $row['title_en']; ?>" placeholder="Enter Article Title" />
-			<br/>
-			
+			<ul>
+			<li><input type="hidden" name="id" value="<?php if(isset($row['id'])) echo $row['id']; ?>" /></li>
+			<li>
 			<label>Slug</label>
 			<input type="text" name="slug"  value="<?php if(isset($row['slug'])) echo $row['slug']; ?>" placeholder="Enter Slug" />
-			<br/>
-			
+			 </li>
+			<li>
 			<label>Category</label>
 			<select name="category_id" value="<?php if(isset($row['cid'])) echo $row['cid']; ?>">
 				<?php 
@@ -67,27 +67,33 @@ $cRes = mysqli_query($con,$sqlCat);
 				<?php	}
 				?>
 			</select>
-			<br/>
-			
-			<label>Short Description :</label>
+			</li>
+			</ul>
+			<div class="add-title"><label class="discr-head">Title : </label>
+				<input type="text" name="title_en" value="<?php if(isset($row['title_en'])) echo $row['title_en']; ?>" placeholder="Enter Article Title" /></div>
+			<label class="discr-head">Short Description :</label>
 			<textarea name="short_desc_en" id="short_desc_en"><?php if(isset($row['short_desc_en'])) echo $row['short_desc_en']; ?></textarea>
 			<br/>
 			
-			<label>Description : </label>
+			<label class="discr-head">Description : </label>
 			<textarea name="body_en" id="body_en"><?php if(isset($row['body_en'])) echo $row['body_en']; ?></textarea>
 			<br/>
 			
-			<input type="submit" value="save" />
-			<input type="button" value="cancel" />
+			<input type="submit" value="save" class="save" />
+			<input type="button" value="cancel" class="cancel" />
 		</form>	
 	</div>
 </div>
 <script>
 CKEDITOR.replace( 'body_en', {
-	uiColor: '#14B8C4'
+	uiColor: '#d3d3d3',
+	toolbar: [
+	[ 'Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ],
+	[ 'FontSize', 'TextColor', 'BGColor' ]
+	]
 });
 CKEDITOR.replace( 'short_desc_en', {
-	uiColor: '#14B8C4',
+	uiColor: '#d3d3d3',
 	toolbar: [
 	[ 'Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ],
 	[ 'FontSize', 'TextColor', 'BGColor' ]

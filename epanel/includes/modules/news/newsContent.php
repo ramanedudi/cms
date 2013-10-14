@@ -28,6 +28,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 ?>
 <script src="<?php echo baseUrl; ?>includes/modules/ckeditor/ckeditor.js"></script>
 <link rel="stylesheet" href="<?php echo baseUrl; ?>includes/modules/ckeditor/sample.css">
+<link href="../../css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="<?php echo baseUrl; ?>/css/custom.css">
 <div id="msg">
 <?php if(isset($error) && !empty($error)) {
 	echo $error;
@@ -36,22 +38,26 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img src="" width="" height="" />
+		<img  src="<?php echo baseUrl; ?>images/news-icon.jpg"  width="" height="" />
 		<div class="header-detail">Homepage News</div>
 		<div class="last-updated">Last Updated : <?php if(isset($row['created'])) echo $row['created']; ?></div>
 	</div>
 	<div class="text-content">
 		<form method="post">
 			<input type="hidden" name="id" value="<?php if(isset($row['id'])) echo $row['id']; ?>" />
-			<input type="text" name="title_en" value="<?php if(isset($row['title_en'])) echo $row['title_en']; ?>" placeholder="Enter News Title" />
+			<div class="add-title">
+				<label class="discr-head">Title : </label>
+				<input type="text" name="title_en" value="<?php if(isset($row['title_en'])) echo $row['title_en']; ?>" placeholder="Enter News Title" />
+			</div>
+			<br />
 			<textarea name="body_en" id="body_en"><?php if(isset($row['body_en'])) echo $row['body_en']; ?></textarea>
-			<input type="submit" value="save" />
-			<input type="button" value="cancel" />
+			<input class="save" type="submit" value="save" />
+			<input class="cancel" type="button" value="cancel" />
 		</form>	
 	</div>
 </div>
 <script>
 CKEDITOR.replace( 'body_en', {
-	uiColor: '#14B8C4'
+	uiColor: '#d3d3d3'
 });
 </script>

@@ -25,7 +25,7 @@ $count = mysqli_num_rows($res);
 	</div>
 
 
-	<div>
+	<div  class="t-right">
 		Add News 
 		<a href="#" onClick="editContent('news','news','')">
 			<img src="<?php echo baseUrl; ?>images/add-icon.png" alt="" width="20" height="20" align="absmiddle" style="margin-left: 5px;">
@@ -37,8 +37,8 @@ $count = mysqli_num_rows($res);
 			<tr class="t-head">
 				<th>Delete</th>
 				<th>Active</th>
-				<th>Edit</th>
-				<th>Title</th>
+				<th width="90">Edit</th>
+				<th class="t-left">Title</th>
 				<th>Update Last On</th>
 				<th>Updated By</th>
 			</tr>
@@ -63,7 +63,7 @@ $count = mysqli_num_rows($res);
 						<img src="<?php echo baseUrl; ?>images/edit-icon.png" alt="" width="20" height="21">
 					</a>		
 				</td>
-				<td><?php echo htmlentities($row['title_en']); ?></td>
+				<td class="t-left"><?php echo htmlentities($row['title_en']); ?></td>
 				<td><?php echo $row['created']; ?></td>
 				<td>Admin</td>
 			</tr>

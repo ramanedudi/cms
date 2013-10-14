@@ -18,9 +18,12 @@ p, h1, h2,h3, h4, h5, h6 { margin:0; padding:0;}
 
 .footer_before {width:1000px; margin:10px auto;}
 
-.footer { background:url(../images/login_bkg_footer_bg.jpg) repeat-x 0 0; height:280px; }
+.footer { background:url(../images/login_bkg_footer_bg.jpg) repeat-x 0 0; height:280px;}
 
 .footer_in { width:1000px; margin:0 auto;}
+
+.t-right {text-align:right;}
+.t-left {text-align:left !important;}
 
 .inputbox{ background: none repeat scroll 0 0 #FFD792;
     border: 1px solid #C67C33;
@@ -95,10 +98,10 @@ img.t-pic { margin:10px 10px 10px 0; border:0;}
 .t-head { color:#fff; font:bold 13px "Comic Sans MS";text-shadow:3px 2px 5px #555; height:30px; background:#eb9049; text-align:center;}
 
 .content_in {width:950px; margin:0 auto;}
-.content_in h3 { margin:0; padding:0 0 10px 0; font-size:14px;}
+.content_in h3 { margin:0; padding:0; font-size:14px;}
 .content_in .data-table tbody td{background:#faf0e7; height:40px; text-align:center;}
 .content_in .data-table tbody tr.odd td{background:#fff;}
-.content_in .data-table {border-bottom:1px solid #faf0e7;}
+.content_in .data-table {border-bottom:1px solid #faf0e7; margin-top:10px;}
 
 #content-wrap h1 {background: url("../images/login_title_bg.jpg") no-repeat 0 0; color:#fff; font-size:12px; margin:0px; padding:6px 15px;}
 	   
@@ -172,4 +175,17 @@ img.t-pic { margin:10px 10px 10px 0; border:0;}
     color: #FFFFFF;
     font-weight: normal;
     text-decoration: none;
+}
+
+
+#content_open_block #close {
+    background: url("../images/close-btn.png") no-repeat 0 0;
+    display: block;
+    height: 28px;
+    position: absolute;
+    right: -14px;
+    text-indent: -9999px;
+    top: -14px;
+    width: 28px;
+	cursor: pointer;
 }

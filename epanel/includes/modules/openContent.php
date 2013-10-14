@@ -16,6 +16,7 @@ $row = mysqli_fetch_array($res);
 ?>
 <script src="ckeditor/ckeditor.js"></script>
 <link rel="stylesheet" href="ckeditor/sample.css">
+<link rel="stylesheet" href="../../css/custom.css">
 <div id="msg">
 <?php if(isset($error) && !empty($error)) {
 	echo $error;
@@ -24,19 +25,19 @@ $row = mysqli_fetch_array($res);
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img src="" width="" height="" />
+		<img src="../../images/welcome-icon.jpg" alt="Welcome"/>
 		<div class="header-detail">Welcome Paragraph</div>
 	</div>
-	<div class="text-content">
+	<div class="text-content welcome-box">
 		<form method="post">
 			<textarea name="welcome-para" id="welcome-para"><?php echo $row['body_en']; ?></textarea>
-			<input type="submit" value="save" />
-			<input type="button" value="cancel" />
+			<input type="submit" value="save" class="save" />
+			<input type="button" value="cancel" class="cancel" />
 		</form>	
 	</div>
 </div>
 <script>
 CKEDITOR.replace( 'welcome-para', {
-	uiColor: '#14B8C4'
+	uiColor: '#eb9049'
 });
 </script>
