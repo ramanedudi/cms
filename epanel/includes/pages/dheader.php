@@ -68,6 +68,11 @@ function openGoogleA()
 			<div class="logo">
 				<a href="<?php echo baseUrl; ?>dashboard.php"><img src="<?php echo baseUrl; ?>images/login_logo.jpg" alt="logo"></a>
 			</div>
+			<div class="logout" style="float: right; z-index: 9999; margin-right: 30px;">
+				<a href="<?php echo baseUrl; ?>logout.php" style="text-decoration: none;">
+					<h1 style="color: #BE2E38;">Logout</h1>
+				</a>
+			</div>
 		</div>
 		<div id="error">
 			
