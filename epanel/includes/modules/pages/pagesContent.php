@@ -46,8 +46,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img src="<?php echo baseUrl; ?>images/page-icon.jpg" alt="" width="60"/>
-		<div class="header-detail">Homepage Posts</div>
+		
+		<div class="header-detail"><img src="<?php echo baseUrl; ?>images/page-icon.jpg" align="middle" width="60"/>Homepage Posts</div>
 	</div>
 	<div class="text-content">
 		<form method="post">

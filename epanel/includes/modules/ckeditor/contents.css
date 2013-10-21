@@ -8,20 +8,20 @@ body
 	/* Font */
 	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
 	font-size: 12px;
-
 	/* Text color */
 	color: #333;
-
 	/* Remove the background color to make it transparent */
-	background-color: #fff;
-
-	margin: 20px;
+	background-color: #fbd597;
+	border:1px solid #d89755;
+	margin: 0;
 }
 
 .cke_editable
 {
 	font-size: 13px;
 	line-height: 1.6em;
+	overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 blockquote
@@ -101,3 +101,13 @@ pre
 .marker {
     background-color: Yellow;
 }
+table.cke_show_border {
+    width: 700px !important;
+}
+
+.cke_show_border td {
+    border: 0 none !important;
+    padding: 12px;
+	vertical-align: top;
+}
+.cke_show_borders table.cke_show_border, .cke_show_borders table.cke_show_border > tr > td, .cke_show_borders table.cke_show_border > tr > th, .cke_show_borders table.cke_show_border > tbody > tr > td, .cke_show_borders table.cke_show_border > tbody > tr > th, .cke_show_borders table.cke_show_border > thead > tr > td, .cke_show_borders table.cke_show_border > thead > tr > th, .cke_show_borders table.cke_show_border > tfoot > tr > td, .cke_show_borders table.cke_show_border > tfoot > tr > th {border:0 !important;}

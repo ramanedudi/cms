@@ -15,8 +15,8 @@ $res = mysqli_query($con,$query);
 $row = mysqli_fetch_array($res);
 ?>
 <script src="ckeditor/ckeditor.js"></script>
-<link rel="stylesheet" href="ckeditor/sample.css">
 <link rel="stylesheet" href="../../css/custom.css">
+
 <div id="msg">
 <?php if(isset($error) && !empty($error)) {
 	echo $error;
@@ -25,8 +25,8 @@ $row = mysqli_fetch_array($res);
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img src="../../images/welcome-icon.jpg" alt="Welcome"/>
-		<div class="header-detail">Welcome Paragraph</div>
+		
+		<div class="header-detail"><img src="../../images/welcome-icon.jpg" align="middle" alt="Welcome"/>Welcome Paragraph</div>
 	</div>
 	<div class="text-content welcome-box">
 		<form method="post">

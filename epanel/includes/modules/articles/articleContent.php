@@ -44,8 +44,8 @@ $cRes = mysqli_query($con,$sqlCat);
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img src="<?php echo baseUrl; ?>images/book-icon.jpg" width="" height="" />
-		<div class="header-detail">Homepage Articles</div>
+		
+		<div class="header-detail"><img src="<?php echo baseUrl; ?>images/book-icon.jpg" align="middle" />Homepage Articles</div>
 		<div class="last-updated">Last Updated : <strong><?php if(isset($row['modified'])) echo $row['modified']; ?></strong></div>
 	</div>
 	<div class="text-content">
@@ -84,6 +84,8 @@ $cRes = mysqli_query($con,$sqlCat);
 		</form>	
 	</div>
 </div>
+
+ 
 <script>
 CKEDITOR.replace( 'body_en', {
 	uiColor: '#d3d3d3',
@@ -98,5 +100,7 @@ CKEDITOR.replace( 'short_desc_en', {
 	[ 'Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ],
 	[ 'FontSize', 'TextColor', 'BGColor' ]
 	]
-	}); 
+	});
+
+
 </script>

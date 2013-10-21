@@ -38,8 +38,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </div>
 <div id="main-content">
 	<div class="header_title">
-		<img  src="<?php echo baseUrl; ?>images/news-icon.jpg"  width="" height="" />
-		<div class="header-detail">Homepage News</div>
+		
+		<div class="header-detail"><img  src="<?php echo baseUrl; ?>images/news-icon.jpg"  align="middle"  />Homepage News</div>
 		<div class="last-updated">Last Updated : <?php if(isset($row['created'])) echo $row['created']; ?></div>
 	</div>
 	<div class="text-content">

@@ -40,16 +40,15 @@ input, textarea, select {background: none repeat scroll 0 0 #FBD597;
     margin: 15px 0 7px;}
 	
 .header_title img {
-    float: left;
+    margin-right:10px;
 }
 
 .header-detail {
     color: #BD7006;
-    float: left;
     font-size: 18px;
     font-weight: bold;
     margin-left: 10px;
-	width:80%;
+	width:100%;
 }
 .header_title {
     border-bottom: 8px solid #EB9049;
@@ -62,10 +61,9 @@ input, textarea, select {background: none repeat scroll 0 0 #FBD597;
 #cke_1_contents {height:250px !important;}
 
 .last-updated {
-    display: block;
-    float: left;
+    display: block; 
     font-size: 12px;
-    margin: 7px 0 0 11px;
+    margin:-14px 0 0 80px;
 }
 .last-updated strong {color:#BD7006;}
 .text-content ul li{float:left;}
@@ -90,8 +88,8 @@ input, textarea, select {background: none repeat scroll 0 0 #FBD597;
     width: 100%;
 }
 
- .save {background:url(../images/save-btn.png) repeat-x 0 0; width:110px; height:43px; border:0; margin-top:10px; cursor:pointer; text-indent:-9999px;}
- .cancel {background:url(../images/cancel-btn.png) repeat-x 0 0; width:110px; height:43px;margin-top:10px; cursor:pointer; margin-left:10px; border:0; text-indent:-9999px;}
+ .save {background:url(../images/save-btn.png) repeat-x 0 0; width:110px; height:43px; border:0; margin-top:10px; cursor:pointer; text-indent:-9999px; font-size:0px;}
+ .cancel {background:url(../images/cancel-btn.png) repeat-x 0 0; width:110px; height:43px;margin-top:10px; cursor:pointer; margin-left:10px; border:0;  font-size:0px; text-indent:-9999px;}
  
 /*div#msg {
     background: none repeat scroll 0 0 #9ED74A;
@@ -107,3 +105,4 @@ input, textarea, select {background: none repeat scroll 0 0 #FBD597;
     /*padding: 8px;*/
     width: 937px;
 }
+ 
